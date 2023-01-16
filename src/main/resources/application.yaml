@@ -1,0 +1,21 @@
+server:
+  port: 9223
+spring:
+  #????Swagger?SpringBoot?????
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  #Springfox??????????AntPathMatcher???Spring Boot 2.6.X????PathPatternMatcher
+  application:
+    name: cascade
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://121.36.208.253:5432/cascade
+    username: postgres
+    password: Sayi123450
+  jpa:
+    show-sql: true
+    #update???????none??????
+    hibernate:
+      ddl-auto: "none"
+    open-in-view: false
